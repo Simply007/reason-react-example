@@ -1,12 +1,21 @@
 {
   "name": "reason-react-example",
-  "bsc-flags": ["-bs-no-version-header", "-bs-super-errors"],
-  "reason": {"react-jsx" : 2},
+  "bsc-flags": [
+    "-bs-no-version-header",
+    "-bs-super-errors"
+  ],
+  "reason": {
+    "react-jsx": 2
+  },
   "namespace": true,
   "bs-dependencies": [
     "reason-react",
+    "reason-apollo",
     "bs-fetch",
     "@glennsl/bs-json"
+  ],
+  "ppx-flags": [
+    "graphql_ppx/ppx"
   ],
   "sources": [
     {
